@@ -3,51 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-      <!--Debut navBar-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid d-flex justify-content-between align-content-center">
-         
-          <!--Logo (mode ordi) et menu burger (mode mobile)-->
+  <header>
+    <!--Debut navBar-->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        
+        <!--logo (mode desktop)-->
+        
+        <a class="navbar-brand d-none d-lg-block" href="#">
+          <img src="images/LOGO.png" alt="Logo" class="img-fluid rounded-circle" style="height: 50px; width: auto;">
+        </a> 
           
-          <a class="navbar-brand d-none d-lg-block" href="#">
-            <img src="images/LOGO.png" alt="Logo" class="img-fluid rounded-circle" style="height: 50px; width: auto;"></a>
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex justify-content-around align-items-center ">
+          
+          <!--bouton menu burger-->
+          
+          <button class="navbar-toggler d-lg-none ms-0 d-block align-items-center" 
+            type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+            
+          <!--titre du site mode mobile et tablette-->
           
-          <!--nom du site (mode mobile) panier(mobile et ordi)-->
-          
-          <div class="position-static d-lg-none">
-            <a class="navbar-brand" href="#">AS en Fleurs</a> 
-          </div>
-          <div class="">
-            <button class="btn btn-primary">Panier</button>
-          </div>
-          
-          <!--liste des pages mobile (burger) et ordi-->
-          
-          <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav mb-lg-0 d-flex justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Plantes intérieures</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Plantes extérieures</a>
-              </li>
-            </ul>  
-          </div>
+          <h1 class="navbar-brand d-lg-none titre">AS en Fleurs</h1>
+        
+            <!--liens pour l'espace utilisateur,le panier et livraison en mode desktop seulement -->
+        
+          <section class="d-flex align-items-center gap-3 position-fixed end-0 me-4">
+            <a href="#"><i class="bi bi-truck h2 text-secondary"></i></a>
+            <a href="#" class="">Connexion/Deconnexion</a>
+            <a href="#"><i class="bi bi-cart4 h2 text-secondary"></i></a>
+          </section>
         </div>
-      </nav>
-      <!--Fin navBar-->
-    </header>
+        
+        <!--menu burger-->
+        
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav mb-lg-0 d-flex justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plantes intérieures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plantes extérieures</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+    <!--fin navBar-->
+  </header>
+  
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br>
     
 
     <main id="main-page"></main>
