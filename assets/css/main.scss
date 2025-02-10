@@ -12,7 +12,7 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/images/mitchell-luo-WPx5Z0R13JY-unsplash.jpg");
+    background-image: url("/images/fondEcran.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -29,6 +29,7 @@ main{
 nav.nav{
     position: fixed;
     width: 100%;
+    z-index: 1000; //il passe au dessus du hero
 
 }
 
@@ -76,3 +77,40 @@ footer.footer{
     width: 100%;
 }
 
+/* Hero */
+
+.hero-scene{
+    position: relative;
+    z-index: 1; //le menu burger passe au dessus
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("/images/hero-scene.jpg");
+        background-size: cover;
+        filter: brightness(0.5); 
+        z-index: 0; 
+        border-radius: 20px 20px 100px 20px;
+    }
+    *{
+        position: relative;
+    }
+    .hero-scene-content{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    @media (max-width: 425px){
+        .hero-scene-content{
+            height: 200px;
+        }
+    }
+}
