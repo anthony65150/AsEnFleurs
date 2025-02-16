@@ -21,7 +21,7 @@ html{
 
 
 main{
-    padding-top: 80px;
+    padding-top: 87px;
 }
 
 /* NavBar */
@@ -30,8 +30,9 @@ nav.nav{
     position: fixed;
     width: 100%;
     z-index: 1000; //il passe au dessus du hero
-
 }
+
+
 
 .titre {
     margin: auto;
@@ -59,10 +60,11 @@ nav.nav{
 }
 
 .modalites{
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 10px;   
 }
 
@@ -74,12 +76,12 @@ footer.footer{
     position: absolute;
     padding: 15px;
     bottom: 0;
-    width: 100%;
 }
 
 /* Hero */
 
 .hero-scene{
+    margin-bottom: 40px;
     position: relative;
     z-index: 1; //le menu burger passe au dessus
     &::before{
@@ -114,3 +116,37 @@ footer.footer{
         }
     }
 }
+
+/*Recherche*/
+
+.recherche{
+    width: 100%;
+    height: 62px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recherche-form{
+    width: 100%;
+}
+
+.barre-recherche{
+    width: 55%;
+    height: 38px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/*Nouveautés*/
+
+/*Connexion*/
+
+.form-label{
+    color: $primary;
+}
+
+
