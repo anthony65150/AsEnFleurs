@@ -3,9 +3,10 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-$primary : rgb(255 25 25);
+$primary : rgb(207, 3, 3);
 $secondary : #5daf42;
 $dark : #000000 ;
+$tertiary : #969696;
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
